@@ -1,0 +1,374 @@
+*{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+color: #ffffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color:#075fe4 ;
+    --background-color:#2c3137 ;
+    --top-background-color:#1b1f24;
+}
+
+body{
+    background-color: var(--background-color);
+    height: 800px;
+}
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: var(--top-background-color);
+    z-index: 1000;
+}
+
+header .logo img{
+    width: 4rem;
+    height: 1.5rem;
+}
+.logo span{
+    color: var(--main-color);
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family:sans-serif !important;
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-family:sans-serif !important;
+
+}
+
+header nav ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    margin: 0 1rem;
+}
+.top-container{
+    background-color: var(--top-background-color);
+}
+
+.top{
+    width: 100%;
+    height: 35rem;
+    background-image: url("pho/profile-img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 1200px 1400px;
+    background-position: 40% -50px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.top .name{
+    width: 25%;
+    font-size: 1.7rem;
+    border-color: transparent;
+    border-width: 5px 0 0 0;
+    border-style: solid; 
+    border-image: linear-gradient(to right, white 25%, transparent);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+.top .name p{
+    /*width: 25%;*/
+    width: 350px;
+    font-size: 0.5em;
+}
+.top .brief{
+    width: 40%;
+    margin-left: 30rem;
+    border-color: transparent;
+    border-width: 5px 0 0 0;
+    border-style: solid; 
+    border-image: linear-gradient(to right, white 25%, transparent);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+.brief .brief-about-me h3 ,.brief .brief-skills h3{
+    font-size: 1.7rem;
+
+}
+.brief .brief-skills ul li{
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.container{
+    width: 90%;
+    padding-top: 6rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-first-part{
+    width: 50%;
+    margin-right: 10%;
+}
+.about-second-part span{
+    font-size: 4.5rem;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+   /* border: solid white 5px;
+    border-radius: 50%;*/ 
+}
+
+.skills {
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+}
+
+.skill {
+    background-color: var(--top-background-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.projects{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--top-background-color);
+}
+
+.projects .container {
+
+    display: grid;
+   grid-template-columns: repeat(auto-fit ,minmax(200px,1fr));
+   grid-gap: 25px;
+   
+}
+.projects .project {
+min-width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+.projects .project:hover {
+    min-width: 200px;
+    background-color: #2c4755;
+        padding: 20px;
+        text-align: center;
+    }
+.container .project img{
+width: 90%;
+margin: 5%;
+border-radius: 15px;
+height: 200px;
+}
+
+.pho{
+    display: flex;
+    justify-content: center;
+    z-index: -1111;
+    margin: 4rem 0 0 8rem;
+}
+
+
+.pho img{
+    border-radius: 20px;
+    width: 20rem;
+    position: relative;
+    margin: 2rem;
+}
+.pho #a{
+top: -5rem;
+}
+.pho #b{
+    top: 6rem;
+}
+
+
+
+.projects, .download-resume {
+    background-color: var(--top-background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.projects h2, .download-resume h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.project, .download-resume-content {
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+ .download-resume h3 {
+    margin: 0;
+    color: #333;
+}
+
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the "Download Resume" section */
+.download-resume-content {
+    text-align: center;
+}
+
+.download-resume-content p {
+    font-size: 18px;
+    color: #333;
+}
+
+.download-resume-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.download-resume-content a:hover {
+    background-color: #0056b3;
+}
+
+
+.footer{
+    background:#111;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap:0.5rem;
+    padding-left: 4rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    padding:1rem 0;
+    color:var(--main-color);
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 0.7rem;
+    padding:0.5rem 0;
+    text-decoration: none;
+    color:#eee;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--main-color);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 1rem;
+    color:#fff;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid #222;
+    color:#fff;
+    padding:1rem;
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+
+/*
+@media (max-width:600px){
+    
+.top{
+    width: 100%;
+    height: 35rem;
+    background-size: 1200px 1400px;
+    background-position: 40% -50px;
+    padding: 0.5rem;
+
+}
+.top .name{
+    width: 25%;
+    font-size: 1rem;
+   
+}
+.top .name p{
+    width: 250px;
+    font-size: 0.5em;
+}
+.top .brief{
+    width: 40%;
+    margin-left: 30rem;
+   
+}
+.brief .brief-about-me h3 ,.brief .brief-skills h3{
+    font-size: 1rem;
+
+}
+.brief .brief-skills ul li{
+    font-weight: 500;
+}
+
+}
+@media (min-width:768px){
+   
+}
+
+@media (min-width:992px){
+   
+}
+
+@media (min-width:1200px){
+  
+}
+
+*/
